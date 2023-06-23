@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="http://anijs.github.io/lib/anicollection/anicollection.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<title>Adhesol</title>
+	
+</head>
+
+
+<body>
+	
+	<section class="cart-container">
+    <form action="">
+        <section class="cart-left-block">
+    <h1 class="cart-heading-h1">Оформление заказа</h1>
+    <section class="section-delivery-variant">
+    <h3 class="cart-heading-h3"><span>1.</span> Способ и адрес доставки</h3>
+    <div class="delivery-variant-items">
+        <div class="delivery-variant-item">
+            <input id="radio-1" type="radio" name="radio" value="1" checked>
+            <label for="radio-1">
+                <div class="delivery-variant-item__type">
+                    <img src="../../img/delivery.svg" alt="">
+                    <span>Самовывоз</span>
+                </div>
+                <div class="delivery-variant-item__cost">Бесплатно</div>
+            </label>
+        </div>
+        <div class="delivery-variant-item">
+            <input id="radio-2" type="radio" name="radio" value="2">
+            <label for="radio-2">
+                <div class="delivery-variant-item__type">
+                    <img src="../../img/pek-logo.svg" alt="">
+                    <span>Доставка. ПЭК</span>
+                </div>
+                <div class="delivery-variant-item__cost">от 298 руб</div>
+            </label>
+        </div>
+        <div class="delivery-variant-item">
+            <input id="radio-3" type="radio" name="radio" value="3">
+            <label for="radio-3">
+                <div class="delivery-variant-item__type">
+                    <img src="../../img/deloviye-linii.svg" alt="">
+                    <span>Доставка. Деловые линии</span>
+                </div>
+                <div class="delivery-variant-item__cost">от 298 руб</div>
+            </label>
+        </div>
+        <div class="delivery-variant-item">
+            <input id="radio-4" type="radio" name="radio" value="4">
+            <label for="radio-4">
+                <div class="delivery-variant-item__type">
+                    <img src="../../img/cdek-logo.svg" alt="">
+                    <span>Доставка. СДЭК</span>
+                </div>
+                <div class="delivery-variant-item__cost">от 298 руб</div>
+            </label>
+        </div>
+    </div>
+</section>
+    <section class="section-payment-variant">
+    <h3 class="cart-heading-h3"><span>2.</span> Способ оплаты</h3>
+    <div class="payment-variant-items">
+        <div class="payment-variant-item">
+            <input id="radio-online" type="radio" name="payment" value="online" checked>
+            <label for="radio-online">
+                <div class="payment-variant-item__type">
+                    <img src="../../img/credit-card.svg" alt="">
+                    <span>Онлайн оплата</span>
+                </div>
+            </label>
+        </div>
+
+        <div class="payment-variant-item">
+            <input id="radio-check" type="radio" name="payment" value="check">
+            <label for="radio-check">
+                <div class="payment-variant-item__type">
+                    <img src="../../img/bill.svg" alt="">
+                    <span>Выставление счета</span>
+                </div>
+            </label>
+        </div>
+
+        <div class="payment-variant-item">
+            <input id="radio-receive" type="radio" name="payment" value="receive">
+            <label for="radio-receive">
+                <div class="payment-variant-item__type">
+                    <img src="../../img/cash-on-delivery.svg" alt="">
+                    <span>Оплата при получении</span>
+                </div>
+                <div class="payment-variant-item__cost">Только банковские карты</div>
+            </label>
+        </div>
+        
+    </div>
+</section>
+    <section class="payment-information">
+    <h3 class="cart-heading-h3"><span>3.</span> Данные плательщика</h3>
+    
+
+    <div class="tabs">
+        <div class="tabs-wrap">
+            <div class="tabs-item">
+                <input type="radio" name="tab-btn" id="tab-btn-1" value="" checked>
+                <label class="tabs-label payment-variant-item__type" for="tab-btn-1">Физическое лицо</label>
+            </div>
+            <div class="tabs-item">
+                <input type="radio" name="tab-btn" id="tab-btn-2" value="">
+                <label class="tabs-label payment-variant-item__type" for="tab-btn-2">Юридическое лицо</label>
+            </div>
+        </div>
+    
+        <div class="tabs-content active-content" id="content-1">
+            <div class="payment-information-inputs">
+                <input class="payment-information-input" type="text" placeholder="Фамилия">
+                <input class="payment-information-input" type="text" placeholder="Имя">
+                <input class="payment-information-input" type="text" placeholder="Отчество">
+                <input class="payment-information-input" type="text" placeholder="Телефон">
+                <input class="payment-information-input" type="text" placeholder="Email">
+                <div class="payment-agreement">
+                    <input type="checkbox">
+                    С условиями <a href="#">пользовательского соглашения</a> ознакомлен и принимаю их
+                </div>
+                <textarea class="payment-information-input" name="" id="" cols="30" rows="5" placeholder="Комментарий к заказу"></textarea>
+            </div>
+        </div>
+        <div class="tabs-content" id="content-2">
+            <div class="payment-information-inputs">
+                <input class="payment-information-input" type="text" placeholder="Название компании">
+                <input class="payment-information-input" type="text" placeholder="ИНН">
+                <input class="payment-information-input" type="text" placeholder="КПП">
+                <input class="payment-information-input" type="text" placeholder="Расчетный счет">
+                <input class="payment-information-input" type="text" placeholder="БИК">
+                <input class="payment-information-input" type="text" placeholder="Юридический адрес">
+                <input class="payment-information-input" type="text" placeholder="Контактное лицо">
+                <input class="payment-information-input" type="text" placeholder="Телефон">
+                <input class="payment-information-input" type="text" placeholder="Email">
+                <div class="payment-agreement">
+                    <input type="checkbox">
+                    С условиями <a href="#">пользовательского соглашения</a> ознакомлен и принимаю их
+                </div>
+                <textarea class="payment-information-input" name="" id="" cols="30" rows="5" placeholder="Комментарий к заказу"></textarea>
+            </div>
+        </div>
+      </div>
+
+</section>
+
+    
+</section>
+        <section class="cart-right-block">
+    <div class="complete-order">
+        <div class="complete-order-row">
+            <div class="complete-order-products-count">
+                3 товара
+            </div>
+            <div class="complete-order-products-weight">
+                26.7 кг
+            </div>
+        </div>
+        <div class="complete-order-row">
+            <div class="complete-order-name">Сумма</div>
+            <div class="complete-order-value">387 000 руб</div>
+        </div>
+        <div class="complete-order-devider"></div>
+        <div class="complete-order-row complete-order-total-wrap">
+            <div class="complete-order-name">Общая стоимость</div>
+            <div class="complete-order-total">352 000 руб</div>
+        </div>
+
+        <button type="submit" class="complete-order-btn">Оформить заказ</button>
+    </div>
+</section>
+    </form>
+</section>
+
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript">
+		AOS.init()
+	</script>
+</body>
+
+</html>
